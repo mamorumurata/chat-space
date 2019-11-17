@@ -14,14 +14,15 @@ $default-color: white;
     display: flex;
     justify-content: space-between;
     line-height: 100px;
-  &--user-name {
-    font-size: 16px;
-    color: $default-color;
-    font-weight: bold;
+    &--user-name {
+      font-size: 16px;
+      color: $default-color;
+      font-weight: bold;
     }
-  &__icon {
-    display: flex;
-    font-size: 0.9em;
+    &__icon {
+      display: flex;
+      font-size: 0.9em;
+      align-items: center;
     }
   }
 }
