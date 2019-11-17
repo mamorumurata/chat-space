@@ -1,0 +1,21 @@
+.chat-main
+  .header-main
+    .header-main__box
+      .header-main__box--group-name
+        group-name
+        =link_to "#", class: "edit__btn" do
+          Edit
+    .header-main__member
+      Member:user-name
+  .chat-message
+    = render "main_chat_message"
+  .footer
+    .footer__box
+      .footer__box__input
+        %input.footer__box__input--text{name: "message", placeholder: "type a message", type: "text", value: ""}
+        %label.footer__box__input--image
+          = icon('fas', 'image')
+          %input.hidden{type: "file"}
+      .footer__box__submit
+        .footer__box__submit--send
+          Send
