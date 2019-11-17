@@ -1,0 +1,15 @@
+.chat-side
+  .header
+    .header__box
+      .header__box--user-name
+        user_name
+      .header__box__icon
+        .header__box__icon--new_group
+          =link_to "#", class: "content__btn" do
+            %i.fas.fa-edit.fa-fw
+            %span<>
+        .header__box__icon--edit_user
+          =link_to "#", class: "content__btn" do
+            %i.fas.fa-cog.fa-fw
+  .group
+    = render "side_bar_group"
