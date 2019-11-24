@@ -2,7 +2,7 @@
   .header
     .header__box
       .header__box--user-name
-        user_name
+        = current_user.name
       .header__box__icon
         .header__box__icon--new_group
           =link_to "#", class: "content__btn" do
